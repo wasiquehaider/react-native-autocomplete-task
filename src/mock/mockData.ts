@@ -1,0 +1,311 @@
+export interface MockPlace {
+  description: string;
+  place_id: string;
+  latitude: number;
+  longitude: number;
+}
+
+const mockPlaces: MockPlace[] = [
+  {
+    description: 'New York, NY',
+    place_id: '1',
+    latitude: 40.7128,
+    longitude: -74.006,
+  },
+  {
+    description: 'New Jersey, NJ',
+    place_id: '2',
+    latitude: 40.0583,
+    longitude: -74.4057,
+  },
+  {
+    description: 'Los Angeles, CA',
+    place_id: '3',
+    latitude: 34.0522,
+    longitude: -118.2437,
+  },
+  {
+    description: 'Chicago, IL',
+    place_id: '4',
+    latitude: 41.8781,
+    longitude: -87.6298,
+  },
+  {
+    description: 'Houston, TX',
+    place_id: '5',
+    latitude: 29.7604,
+    longitude: -95.3698,
+  },
+  {
+    description: 'Phoenix, AZ',
+    place_id: '6',
+    latitude: 33.4484,
+    longitude: -112.074,
+  },
+  {
+    description: 'Philadelphia, PA',
+    place_id: '7',
+    latitude: 39.9526,
+    longitude: -75.1652,
+  },
+  {
+    description: 'San Antonio, TX',
+    place_id: '8',
+    latitude: 29.4241,
+    longitude: -98.4936,
+  },
+  {
+    description: 'San Diego, CA',
+    place_id: '9',
+    latitude: 32.7157,
+    longitude: -117.1611,
+  },
+  {
+    description: 'Dallas, TX',
+    place_id: '10',
+    latitude: 32.7767,
+    longitude: -96.797,
+  },
+  {
+    description: 'San Jose, CA',
+    place_id: '11',
+    latitude: 37.3382,
+    longitude: -121.8863,
+  },
+  {
+    description: 'Austin, TX',
+    place_id: '12',
+    latitude: 30.2672,
+    longitude: -97.7431,
+  },
+  {
+    description: 'Jacksonville, FL',
+    place_id: '13',
+    latitude: 30.3322,
+    longitude: -81.6557,
+  },
+  {
+    description: 'San Francisco, CA',
+    place_id: '14',
+    latitude: 37.7749,
+    longitude: -122.4194,
+  },
+  {
+    description: 'Columbus, OH',
+    place_id: '15',
+    latitude: 39.9612,
+    longitude: -82.9988,
+  },
+  {
+    description: 'Indianapolis, IN',
+    place_id: '16',
+    latitude: 39.7684,
+    longitude: -86.1581,
+  },
+  {
+    description: 'Fort Worth, TX',
+    place_id: '17',
+    latitude: 32.7555,
+    longitude: -97.3308,
+  },
+  {
+    description: 'Charlotte, NC',
+    place_id: '18',
+    latitude: 35.2271,
+    longitude: -80.8431,
+  },
+  {
+    description: 'Detroit, MI',
+    place_id: '19',
+    latitude: 42.3314,
+    longitude: -83.0458,
+  },
+  {
+    description: 'El Paso, TX',
+    place_id: '20',
+    latitude: 31.7619,
+    longitude: -106.485,
+  },
+  {
+    description: 'Memphis, TN',
+    place_id: '21',
+    latitude: 35.1495,
+    longitude: -90.049,
+  },
+  {
+    description: 'Boston, MA',
+    place_id: '22',
+    latitude: 42.3601,
+    longitude: -71.0589,
+  },
+  {
+    description: 'Seattle, WA',
+    place_id: '23',
+    latitude: 47.6062,
+    longitude: -122.3321,
+  },
+  {
+    description: 'Denver, CO',
+    place_id: '24',
+    latitude: 39.7392,
+    longitude: -104.9903,
+  },
+  {
+    description: 'Nashville, TN',
+    place_id: '25',
+    latitude: 36.1627,
+    longitude: -86.7816,
+  },
+  {
+    description: 'Baltimore, MD',
+    place_id: '26',
+    latitude: 39.2904,
+    longitude: -76.6122,
+  },
+  {
+    description: 'Oklahoma City, OK',
+    place_id: '27',
+    latitude: 35.4676,
+    longitude: -97.5164,
+  },
+  {
+    description: 'Las Vegas, NV',
+    place_id: '28',
+    latitude: 36.1699,
+    longitude: -115.1398,
+  },
+  {
+    description: 'Louisville, KY',
+    place_id: '29',
+    latitude: 38.2527,
+    longitude: -85.7585,
+  },
+  {
+    description: 'Milwaukee, WI',
+    place_id: '30',
+    latitude: 43.0389,
+    longitude: -87.9065,
+  },
+  {
+    description: 'Albuquerque, NM',
+    place_id: '31',
+    latitude: 35.0844,
+    longitude: -106.6504,
+  },
+  {
+    description: 'Tucson, AZ',
+    place_id: '32',
+    latitude: 32.2226,
+    longitude: -110.9747,
+  },
+  {
+    description: 'Fresno, CA',
+    place_id: '33',
+    latitude: 36.7378,
+    longitude: -119.7871,
+  },
+  {
+    description: 'Sacramento, CA',
+    place_id: '34',
+    latitude: 38.5816,
+    longitude: -121.4944,
+  },
+  {
+    description: 'Kansas City, MO',
+    place_id: '35',
+    latitude: 39.0997,
+    longitude: -94.5786,
+  },
+  {
+    description: 'Mesa, AZ',
+    place_id: '36',
+    latitude: 33.4152,
+    longitude: -111.8315,
+  },
+  {
+    description: 'Virginia Beach, VA',
+    place_id: '37',
+    latitude: 36.8529,
+    longitude: -75.978,
+  },
+  {
+    description: 'Atlanta, GA',
+    place_id: '38',
+    latitude: 33.749,
+    longitude: -84.388,
+  },
+  {
+    description: 'Colorado Springs, CO',
+    place_id: '39',
+    latitude: 38.8339,
+    longitude: -104.8214,
+  },
+  {
+    description: 'Omaha, NE',
+    place_id: '40',
+    latitude: 41.2565,
+    longitude: -95.9345,
+  },
+  {
+    description: 'Raleigh, NC',
+    place_id: '41',
+    latitude: 35.7796,
+    longitude: -78.6382,
+  },
+  {
+    description: 'Miami, FL',
+    place_id: '42',
+    latitude: 25.7617,
+    longitude: -80.1918,
+  },
+  {
+    description: 'Cleveland, OH',
+    place_id: '43',
+    latitude: 41.4993,
+    longitude: -81.6944,
+  },
+  {
+    description: 'Tulsa, OK',
+    place_id: '44',
+    latitude: 36.154,
+    longitude: -95.9928,
+  },
+  {
+    description: 'Oakland, CA',
+    place_id: '45',
+    latitude: 37.8049,
+    longitude: -122.2711,
+  },
+  {
+    description: 'Minneapolis, MN',
+    place_id: '46',
+    latitude: 44.9778,
+    longitude: -93.265,
+  },
+  {
+    description: 'Wichita, KS',
+    place_id: '47',
+    latitude: 37.6872,
+    longitude: -97.3301,
+  },
+  {
+    description: 'Arlington, TX',
+    place_id: '48',
+    latitude: 32.7357,
+    longitude: -97.1081,
+  },
+  {
+    description: 'Bakersfield, CA',
+    place_id: '49',
+    latitude: 35.3733,
+    longitude: -119.0187,
+  },
+  {
+    description: 'Tampa, FL',
+    place_id: '50',
+    latitude: 27.9506,
+    longitude: -82.4572,
+  },
+];
+
+export default mockPlaces;
